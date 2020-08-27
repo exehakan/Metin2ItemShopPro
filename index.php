@@ -1,4 +1,5 @@
 <?php
+
 require_once("Core/Header.php");
 require_once("Core/config.php");
 require_once("Core/function.php");
