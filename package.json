@@ -1,0 +1,32 @@
+{
+  "name": "Metin2NesneMarketProjesi",
+  "version": "1.0.0",
+  "description": "My riveting Nuxt.js project",
+  "author": "exeakan",
+  "private": true,
+  "config": {
+    "nuxt": {
+      "host": "0.0.0.0",
+      "port": "3000"
+    }
+  },
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.9.3",
+    "@nuxtjs/universal-storage": "^0.5.4",
+    "axios": "^0.19.2",
+    "cookie-universal-nuxt": "^2.1.2",
+    "nuxt": "^2.0.0",
+    "simplebar": "^5.1.0",
+    "vue2-perfect-scrollbar": "^1.3.0",
+    "vuelidate": "^0.7.5"
+  },
+  "devDependencies": {
+    "@nuxtjs/vuetify": "^2.0.0-beta.0"
+  }
+}
