@@ -1,7 +1,6 @@
 <template>
   <v-app>
-    <v-row densejustify="center">
-
+    <v-row dense justify="center">
       <v-col cols="12" lg="10" md="10" sm="8" xl="10">
         <v-alert border="top" class="title" color="red lighten-2" dark>Özel Olarak Hazirlanmiş İtemler</v-alert>
         <v-sheet
@@ -31,6 +30,9 @@
 import ShopSayfasiOzel_Itemlar from "../../components/ShopSayfasiOzel_Itemlar";
 
 export default {
+  beforeCreate() {
+    this.$storage.setUniversal("ActiveRouteName", this.$route.name)
+  },
   components: {
     ShopSayfasiOzel_Itemlar,
   },

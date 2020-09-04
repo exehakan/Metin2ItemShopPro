@@ -1128,9 +1128,7 @@ export default {
                 }).then(res => {
                   this.$store.state.Common.ItemGonderilirkenSecilenItemDeposu = null;
                   this.Kapat();
-                }).catch(err => {
-                  console.log(err);
-                })
+                });
               } else {
                 $nuxt.$store.state.Ayarlar.SnackbarDurumMesaji = this.RenderL.UyariYetersizEjderhaParasi;
                 $nuxt.$store.state.Ayarlar.SnackbarDurum = true;

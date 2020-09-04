@@ -42,6 +42,9 @@ export default {
     },
   },
   beforeCreate() {
+    // this.$storage.setUniversal("ActiveRouteName",this.$route.name)
+    var rotam = this.$route.name.split("-")[0] + "/" + this.$route.params.id
+    this.$storage.setUniversal("ActiveRouteName", rotam)
     localStorage.setItem("KategoriID", this.$route.params.id);
     this.$store.dispatch("Common/VerileriAl", this.$route.params.id);
   },

@@ -163,6 +163,11 @@ export default {
           KullaniciAdi: await this.$store.dispatch("Login/Ozel", AccountGetir.KullaniciAdi),
           EmailAdresi: await this.$store.dispatch("Login/Ozel", AccountGetir.EmailAdresi),
           Sifre: await this.$store.dispatch("Login/Ozel", AccountGetir.Sifre),
+          // KullaniciAdi:AccountGetir.KullaniciAdi,
+          // EmailAdresi:AccountGetir.EmailAdresi,
+          // Sifre:AccountGetir.Sifre,
+
+
         }
         if ((AccountGetir.KullaniciAdi != null) && (AccountGetir.EmailAdresi != null) && (AccountGetir.Sifre != null)) {
           this.$store.dispatch("Login/GirisYap", GirisBilgileri);

@@ -21,7 +21,7 @@
     "@nuxtjs/universal-storage": "^0.5.4",
     "axios": "^0.19.2",
     "cookie-universal-nuxt": "^2.1.2",
-    "nuxt": "^2.0.0",
+    "nuxt": "^2.14.4",
     "simplebar": "^5.1.0",
     "vue2-perfect-scrollbar": "^1.3.0",
     "vuelidate": "^0.7.5"

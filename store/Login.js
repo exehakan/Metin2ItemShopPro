@@ -13,7 +13,18 @@ export const mutations = {
   LoginDogrula(state, payload) {
     state.isLogin = payload;
     if (payload == true) {
-      this.$router.push("/Shop");
+      const AktifRouteName = this.$storage.getUniversal("ActiveRouteName");
+      if (AktifRouteName != null && AktifRouteName != "undefined" && AktifRouteName != "") {
+        if (AktifRouteName == "index") {
+          this.$router.push("/Shop");
+        } else {
+          this.$router.push(`/${AktifRouteName}`);
+        }
+
+      } else {
+        this.$router.push("/Shop");
+      }
+
     }
   },
   LoginExit(state) {
@@ -36,7 +47,11 @@ export const actions = {
       SERVER_ROOT: localStorage.getItem("SERVER_ROOT"),
     }).then(res => {
       let DATA = res.data[0];
-      $nuxt.$store.commit("Account/EjderhaParasiKontrol", res.data[0].coins);
+
+      if (res.data != null) {
+        $nuxt.$store.commit("Account/EjderhaParasiKontrol", res.data[0].coins);
+      }
+
       if (DATA == "BASARILI_KULLANICI_GIRISI") {
         rootState.Ayarlar.SnackbarDurum = true;
         rootState.Ayarlar.SnackbarButtonLoadingIzni = true;
@@ -65,8 +80,6 @@ export const actions = {
   },
 
   async Ozel({rootState}, payload) {
-    console.log(payload);
-
     let Alg = Number(localStorage.getItem("Alg"));
     if (!Alg || Alg < 1) {
       rootState.Ayarlar.SnackbarDurum = true;

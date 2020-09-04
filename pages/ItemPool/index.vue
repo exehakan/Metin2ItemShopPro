@@ -87,6 +87,7 @@
     </v-row>
 
 
+
   </div>
 </template>
 
@@ -117,6 +118,9 @@ export default {
     this.$store.state.Ayarlar.SnackbarDurum = false;
     this.$store.state.Player.PlayereAitItemHavuzu = null;
 
+  },
+  beforeCreate() {
+    this.$storage.setUniversal("ActiveRouteName", this.$route.name)
   },
   computed: {
     RenderL() {
