@@ -194,7 +194,6 @@ export default {
   async beforeCreate() {
     let SecilenDil_Kontrol = this.$storage.getLocalStorage("SecilenDil")
     if (SecilenDil_Kontrol == undefined || SecilenDil_Kontrol == "undefined" || !SecilenDil_Kontrol) {
-      console.log("Bu alan çalıştı");
       this.$storage.setUniversal("SecilenDil", "0");
       this.$storage.setUniversal("SecilenDilKalibiString", "TurkishLanguage");
       this.$store.state.LanguageSystem.GelenDilVerileri = this.$store.state.LanguageSystem.TurkishLanguage[0];
