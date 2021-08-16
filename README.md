@@ -3,7 +3,7 @@
 > My riveting Nuxt.js project
 
 
-![alt text](http://url/to/img.png)
+[Imgur](https://i.imgur.com/YEtpzRD.gifv)
 
 
 
