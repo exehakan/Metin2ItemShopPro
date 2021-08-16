@@ -3,8 +3,9 @@
 > My riveting Nuxt.js project
 
 
-[Imgur](https://i.imgur.com/YEtpzRD.gifv)
 
+
+![alt text](https://i.imgur.com/YEtpzRD.gifv)
 
 
 
