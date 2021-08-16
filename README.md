@@ -3,14 +3,15 @@
 > My riveting Nuxt.js project
 
 
-(https://i.imgur.com/x9F3Uwm.gif)
-(https://i.imgur.com/ctFaKSl.gif)
-(https://i.imgur.com/Ol35h09.gif)
+
 ![stack Overflow](https://i.imgur.com/L8NIAqm.gif)
 ![stack Overflow](https://i.imgur.com/SbT3QX4.gif)
 ![stack Overflow](https://i.imgur.com/JZPqoua.gif)
 
-
+# Resimlerin devamı
+(https://i.imgur.com/x9F3Uwm.gif)
+(https://i.imgur.com/ctFaKSl.gif)
+(https://i.imgur.com/Ol35h09.gif)
 
 
 
