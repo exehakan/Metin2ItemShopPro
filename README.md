@@ -13,7 +13,7 @@
 ![alt text](https://i.imgur.com/JZPqoua.gif)
 ![alt text](https://i.imgur.com/x9F3Uwm.gif)
 ![alt text](https://i.imgur.com/ctFaKSl.gif)
-
+![Screenshot](https://i.imgur.com/ctFaKSl.gif)
 
 
 ## Build Setup
